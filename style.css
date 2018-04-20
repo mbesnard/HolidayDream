@@ -1,0 +1,192 @@
+.container { /*bloc qui entoure les chambres*/
+  width: 100%;
+  max-width: 960px;
+}
+
+.room { /*ferme les blocs*/
+  width: 100%;
+  height: auto;
+  display: block;
+  float: left;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+.room_img { /* texte a cote de l'image */
+  width: 40%;
+  float: left;
+  max-height: 280px;
+  overflow: hidden;
+}
+
+.room_information { /* ecriture */
+  width: 60%;
+  padding: 0px 20px 20px 20px;
+  float: left;
+  color: #495559;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+.room_moreinfo { /*positionnement des info en + */
+  padding: 20px;
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.room_features { /*le tout bien organisé*/
+  float: left;
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  color: #e5e5e5;
+}
+.room_features ul {
+  margin: 0;
+  padding: 0;
+  width: 40%;
+  float: left;
+}
+.room_features li { /*prix + m² + perso*/
+  display: inline-block;
+  border-right: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  width: calc(100% / 3);
+  font-size: 20px;
+  font-size: 2rem;
+}
+.room_features .room_features--book-btn { /*reserver*/
+  float: left;
+  display: block;
+  line-height: 60px;
+  width: 60%;
+  text-align: center;
+  color: #5fb2cf;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-size: 2rem;
+}
+.room_features .room_features--book-btn:hover { /*bouton effet hover*/
+  font-size: 21.1px;
+  font-size: 2.11rem;
+}
+
+#banniere1  { /*haut de page*/
+  display: block; /*definit un bloc*/
+  background-color: none; /*pas de couleur de fond*/
+  height: 35%; /*hauteur*/
+  width: 100%;  /*largeur*/
+  text-align: center; /* teste centré*/
+}
+
+p{ /*paragraphe*/
+  color: black; /*couleur du paragraphe*/
+  font-style: italic; /*style de la police*/
+}
+
+nav ul {
+    list-style-type: none; /* pas de point de liste */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    background-color: #fedb3c;   
+}
+nav li {
+    float: left;   
+}
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav li a:hover { /* illumination du bloc lorsque la souris est dessus */
+    background-color: #111;
+    text-decoration: none; /* pas de soulignement */
+    color: white;
+}
+#menu ul li ul { /*apparation des sous-listes sous les blocs du menus*/
+ display:none; /*type de boite par defaut*/
+ }
+#menu ul li:hover ul { /*faire disparaitre les sous-listes*/
+ display:block;
+ }
+#menu li:hover ul li { /*faire apparaitre les sous-listes quand la souris se met sur le bloc du menu*/
+ float:none; 
+}
+#menu li ul { /*ne pas décalle le menu quand les sous-menus apparaissent*/
+ position:absolute; /*élement positionné par "calcul"*/
+ }
+
+#contenu { 
+    display: block; 
+  background-color: none; 
+  height: 100%; 
+  width: 100%;   
+  color: black; 
+  text-align: center; 
+  text-decoration: none;
+}
+
+.img{ /*image */
+    width:400px; 
+    height:300px; 
+    display : inline-block; 
+    }
+ .text{ /*texte de description*/
+    width:auto;
+    height:auto;
+    background:#FFF; 
+    opacity:0;
+    } 
+  .img:hover .text { /*texte disparait et apparait au passage de la souris*/  
+    opacity:0.6; 
+    text-align:center; 
+    color:#000000; 
+    font-size:auto ; 
+    font-family:serif; 
+    padding:10px; 
+    } 
+
+form { /* Formulaire */
+    margin: auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em; /* Pour voir les limites du formulaire */
+    background-color: #DCDCDC;
+}  
+
+footer{ /*pied de page*/
+  background-color: #DCDCDC;
+  width: 100%;
+ }
+div ul {
+    list-style-type: none; 
+    overflow: hidden;   
+}
+div li {
+    float: left;
+    padding-right: 20px; 
+}
+#piedDePage a{
+  text-align: center;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+  }
+     
+                                      
+#result{
+  margin-left: 80%;
+}
+
+

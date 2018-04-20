@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head> <!--en-tête-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!--accessible sur mobile -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"> <!--accent lisible par les navigateurs-->
+        <title> Holiday Dream </title> <!--titre de la page -->
+        <link type="text/css" rel="stylesheet" href="style.css" />  <!--lien avec le CSS -->
+    </head>
+
+            <body> <!--corps du site-->
+
+                <div id="banniere1"> <!--1er bloc-->
+                    <img src="img/ideelogo.jpg" width="350" height="250"/>
+                </div> 
+
+                <nav id="menu"> <!--2ème bloc-->
+                     <ul> <!--liste désordonnée-->
+                    <li><a href="accueil.php">Accueil</a></li> <!--liste ordonnée-->
+                    <li><a href="chambres.html">Chambres</a></li>   <!-- accompagne d'un lien hypertexte--> 
+                    <li><a href="salles.html"> Salles </a></li>
+                    <li><a href="loisirs.php"> Loisirs </a></li>
+                    <li><a href="evenements.php"> Evènements </a></li> 
+                    <li><a href="info.php">Plans & Accès</a></li>
+                    <li><a href="formulaire.php"> Nous Contacter </a></li>
+                    <li style="float:right"><a href="forum.php"> Avis </a>
+                    <li style="float:right"><a href="compte.php"> Mon Compte </a>
+                     </ul> 
+                </nav>   
+
+  <div class="container"> <!--3eme bloc-->
+    <h2>Nos Salles</h2>
+    <p> Bouteilles d'eau fournis <br> Il est interdit de fumer dans nos chambres !</p>
+  
+  <ul class="nav nav-tabs"> <!--menu intuitif bootstrap-->
+    <li class="active"><a data-toggle="tab" href="#home">Conférence</a></li>
+    <li><a data-toggle="tab" href="#1">Meeting</a></li>
+    <li><a data-toggle="tab" href="#2">Réunion</a></li>
+    <li><a data-toggle="tab" href="#3">Séminaire</a></li>
+     <li><a data-toggle="tab" href="#4">Réception</a></li>
+    <li><a data-toggle="tab" href="#5">Fête</a></li>
+    <li><a data-toggle="tab" href="#6">Mariage</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+    <h3>Conférence</h3>
+
+    <div class="container">
+       <div class="row">
+      <section class="room">
+       <div class="room_img"><img src="img/conference.jpg" width="400" height="200"/> </div>
+          <div class="room_information"><!-- Room Information --> 
+          <h3 class="room_information--heading">Conférence</h3>
+          <p> Salle de conférence de 50m² pouvant accueillir environ 30 personnes, pour vos rendez-vous d'affaire. Situé au 1er étage dans l'aile ouest du batiment, pour vous garantir une certaine tranquilité. </p>       
+          <br><a href="#" class="room_information--moreinfo-btn js-room_moreinfo_btn">+ d'informations</a>  
+        </div>
+        <div class="room_moreinfo js-room_moreinfo" style="display: none;"> <!--element en +-->
+            <p id="quote"> Equipements : vidéo-projecteur avec écran de projection, telephone ligne direct vers l'extérieur, wifi haut débit, plateau repas sur demande. </p>
+        </div>    
+        <div class="room_features">
+         <ul>
+            <li><i class="fa fa-bath"></i>50m²</li> 
+            <li><i class="fa fa-male"></i><img src="img/hf.jpg" width="40" height="40"/> 30</li> 
+            <li><span class="room_features--price">80€/j</span></li>
+          </ul> 
+         <a href="compte.php"> <input type="button" name="Reserver" value="Réserver" class="room_features--book-btn"> </a>
+      </div>  
+      </section>
+    </div>  <!-- /row-->
+  </div>
+  </div>
+        
+    <div id="1" class="tab-pane fade">
+    <h3> Meeting </h3>
+
+    <div class="container">
+    <div class="row">
+      <section class="room">
+       <div class="room_img"><img src="img/meeting.jpg" width="400" height="200"/> </div>
+          <div class="room_information"><!-- Room Information --> 
+          <h2 class="room_information--heading">Meeting</h2>
+          <p> Salle de meeting de 25m² pouvant accueillir 20 personnes, pour vos différents rendez-vous. Situé au 1er étage, dans l'aile ouest du batiment pour vous garantir une certaine tranquilité.</p> 
+          <br> <a href="#" class="room_information--moreinfo-btn js-room_moreinfo_btn">+ d'informations</a>  
+        </div>
+        <div class="room_moreinfo js-room_moreinfo" style="display: none;">
+            <p id="quote"> Equipements : écran plasma 120 cm connecté au wifi avec clavier et souris, ainsi qu'une ligne telephonique directe vers l'extérieur. </p>
+        </div>    
+        <div class="room_features">
+         <ul>
+            <li><i class="fa fa-bath"></i>25m²</li> 
+            <li><i class="fa fa-male"></i><img src="img/hf.jpg" width="40" height="40"/>20</li> 
+            <li><span class="room_features--price">45€/j</span></li>
+          </ul> 
+           <a href="compte.php"> <input type="button" name="Reserver" value="Réserver" class="room_features--book-btn"> </a>
+        </div>  
+      </section>
+      </div>  <!-- /row-->
+    </div><!-- /container -->
+    </div>
+
+    <div id="2" class="tab-pane fade">
+      <h3>Réunion</h3>
+    
+    <div class="container">
+    <div class="row">
+    <section class="room">
+       <div class="room_img"><img src="img/reunion.jpg" width="400" height="200"/> </div>
+          <div class="room_information"><!-- Room Information --> 
+          <h2 class="room_information--heading">Réunion</h2>
+          <p> Salle de réunion de 35m² pouvant accueillir 20 personnes, pour vos différents rendez-vous. Situé au 1er étage, dans l'aile ouest du batiment pour vous garantir une certaine tranquilité.</p> 
+          <br> <a href="#" class="room_information--moreinfo-btn js-room_moreinfo_btn">+ d'informations</a>  
+        </div>
+        <div class="room_moreinfo js-room_moreinfo" style="display: none;">
+          <p id="quote"> Equipements : vidéo-projecteur avec écran de projection, vidéoprojecteur, tableau "à feuille", wifi haut débit, plateau repas sur demande. </p>
+      </div>    
+        <div class="room_features">
+         <ul>
+            <li><i class="fa fa-bath"></i>35m²</li> 
+            <li><i class="fa fa-male"></i><img src="img/hf.jpg" width="40" height="40"/>20</li> 
+            <li><span class="room_features--price">55€/j</span></li>
+          </ul> 
+           <a href="compte.php"> <input type="button" name="Reserver" value="Réserver" class="room_features--book-btn"> </a>
+      </div>  
+      </section>
+      </div>  <!-- /row-->  
+    </div><!-- /container -->
+    </div>
+                   
+    <div id="3" class="tab-pane fade">
+    <h3>Séminaire</h3>
+    
+    <div class="container">
+        <div class="row">
+     <section class="room">
+       <div class="room_img"><img src="img/seminaire.jpg" width="400" height="200"/> </div>
+          <div class="room_information"><!-- Room Information --> 
+          <h2 class="room_information--heading">Séminaire</h2>
+          <p> Voici une salle de réunion de 20m² pouvant accueillir 15 personnes, pour vos différents rendez-vous. Situé au 1er étage, dans l'aile ouest du batiment pour vous garantir une certaine tranquilité.</p>
+        <br> <a href="#" class="room_information--moreinfo-btn js-room_moreinfo_btn">+ d'informations</a>  
+        </div>
+        <div class="room_moreinfo js-room_moreinfo" style="display: none;">
+          <p id="quote"> Equipements sur demande, sinon papier et stylo sont sur place, wifi haut débit, plateau repas sur demande. </p>
+      </div>    
+        <div class="room_features">
+         <ul>
+            <li><i class="fa fa-bath"></i>20m²</li> 
+            <li><i class="fa fa-male"></i><img src="img/hf.jpg" width="40" height="40"/>15</li> 
+            <li><span class="room_features--price">35€/j</span></li>
+          </ul> 
+          <a href="compte.php"> <input type="button" name="Reserver" value="Réserver" class="room_features--book-btn"> </a>
+      </div>  
+      </section>
+    </div>  <!-- /row-->
+    </div><!-- /container -->
+    </div>
+
+    <div id="4" class="tab-pane fade">
+    <h3> Réception </h3>
+    
+    <div class="container">
+    <div class="row">
+    <section class="room">
+       <div class="room_img"><img src="img/reception.jpeg" width="400" height="200"/>  </div>
+          <div class="room_information"><!-- Room Information --> 
+          <h2 class="room_information--heading">Réception</h2>
+          <p> Salle de 100m² pouvant accueillir 60 personnes, pour convier vos collègues à vos réunion. Situé au 1er étage, dans l'aile Ouest du batiment, pour vous assurer une certaine tranquilité.<br></p>
+            <br>  <a href="#" class="room_information--moreinfo-btn js-room_moreinfo_btn">+ d'informations</a>  
+        </div>
+        <div class="room_moreinfo js-room_moreinfo" style="display: none;">
+          <p id="quote"> Equipements sur demande avec des repas prévu à l'avance, wifi haut débit. </p>
+      </div>    
+        <div class="room_features">
+         <ul>
+            <li><i class="fa fa-bath"></i>120m²</li> 
+            <li><i class="fa fa-male"></i><img src="img/hf.jpg" width="40" height="40"/>60</li> 
+            <li><span class="room_features--price">200€/j</span></li>
+          </ul> 
+          <a href="compte.php"> <input type="button" name="Reserver" value="Réserver" class="room_features--book-btn"> </a>
+      </div>  
+      </section>
+      </div>  <!-- /row-->
+    </div><!-- /container -->
+    </div>
+           
+    <div id="5" class="tab-pane fade">
+    <h3> Fêtes </h3>
+    
+    <div class="container">
+    <div class="row">
+    <section class="room">
+       <div class="room_img"><img src="img/anniversaire.jpg" width="400" height="200"/>   </div>
+          <div class="room_information"><!-- Room Information --> 
+          <h2 class="room_information--heading">Fête</h2>
+          <p> Salle de 200m² pouvant accueillir une centaine de personnes, pour convier vos ami(e)s à vos diverses fêtes, comme un anniversaire. Situé au rez-de-chaussée, dans l'aile Est du batiment.<br></p>
+                        <br>  <a href="#" class="room_information--moreinfo-btn js-room_moreinfo_btn">+ d'informations</a>  
+        </div>
+        <div class="room_moreinfo js-room_moreinfo" style="display: none;">
+          <p id="quote"> Equipements et repas sur demande, wifi haut débit. </p>
+      </div>    
+        <div class="room_features">
+         <ul>
+            <li><i class="fa fa-bath"></i>100m²</li> 
+            <li><i class="fa fa-male"></i><img src="img/hf.jpg" width="40" height="40"/>+100</li> 
+            <li><span class="room_features--price">1000€/j</span></li>
+          </ul> 
+         <a href="compte.php"> <input type="button" name="Reserver" value="Réserver" class="room_features--book-btn"> </a>
+      </div>  
+      </section>
+    </div>  <!-- /row-->
+    </div><!-- /container -->
+    </div>
+
+    <div id="6" class="tab-pane fade">
+    <h3> Mariage </h3>
+    
+    <div class="container">
+    <div class="row">
+     <section class="room">
+       <div class="room_img"><img src="img/mariage.jpg" width="400" height="200"/> </div>
+          <div class="room_information"><!-- Room Information --> 
+          <h2 class="room_information--heading">Mariage</h2>
+          <p> Salle de 200m² pouvant accueillir une centaine de personnes, pour que votre soirée soit innoubliable. Situé au rez-de-chaussée, dans l'aile Est du batiment. <br></p>
+                        <br> <a href="#" class="room_information--moreinfo-btn js-room_moreinfo_btn">+ d'informations</a>  
+        </div>
+        <div class="room_moreinfo js-room_moreinfo" style="display: none;">
+          <p id="quote"> Equipements et repas sur demande, wifi haut débit. </p>
+      </div>    
+        <div class="room_features">
+         <ul>
+            <li><i class="fa fa-bath"></i>200m²</li> 
+            <li><i class="fa fa-male"></i><img src="img/hf.jpg" width="40" height="40"/>+100</li> 
+            <li><span class="room_features--price">1500€/j</span></li>
+          </ul> 
+           <a href="compte.php"> <input type="button" name="Reserver" value="Réserver" class="room_features--book-btn"> </a>
+      </div>  
+      </section>
+    </div>  <!-- /row-->
+    </div><!-- /container -->
+    </div>
+    </div>  
+  
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="index.js"></script>
+
+</body>
+
+<br>
+
+<footer>
+    <div id="piedDePage" align="center"> <!--pied de page-->
+      <ul>
+        <li><div class="div">
+        <h3>Holiday Dream</h3>
+        <p> 151 Rue Bouthier, 33100 Bordeaux </p>
+        <p><img src="img/tel.png" width="15" height="15"/> 01.05.99.58.72</p>
+        <p> <a href="mailto:holiday@dream.fr"> holiday@dream.fr </a></p>
+        </div></li>
+
+        <li><div class="div">
+        <h4>Réseaux Sociaux</h4>
+        <a href="https://www.facebook.com/"><img src="img/fb.png" width="30" height="30"/></a>
+        <a href="https://twitter.com/?lang=fr#"><img src="img/twitter.png" width="30" height="30"/></a>
+        <a href="https://www.instagram.com/?hl=fr"><img src="img/insta.jpg" width="30" height="30"/></a> <br>
+        </div></li>
+
+        <li> <div class="div">
+        <h4>Newsletter</h4>
+        <p>Tenez-vous au courant des dernières informations du site.</p>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for..." size="20">
+          <span class="input-group-btn"><button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button></span>
+        </div>
+        </div></li>    
+      </ul>
+    </div>
+
+  <div align="center">
+    Tous droits réservés © 2017 | <a href="">Politique de Confidentialité</a> | <a href="">Conditions Générales d'Utilisations</a> | <a href="">Mentions Légales</a> | <a href="">FAQ </a> | <a href="">Plan du site</a> 
+  </div> 
+
+  </footer>
+       
+</html>  

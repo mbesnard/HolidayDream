@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"> <!--accent lisible par les navigateurs-->
+    <link type="text/css" rel="stylesheet" href="style3.css" /> 
+    
+    <title>Facture</title>
+  </head>
+
+  <body>
+  
+  <header> <!--1er bloc-->
+     <img src="img/ideelogo.jpg" width="220" height="154" align="left"/>
+    <h1>FACTURE n°250 </h1>
+      <h3>Holiday Dream - Hôtel</h3>
+      <p> 151 Rue Bouthier, 33100 Bordeaux <br>
+       01.05.99.58.72 <br>
+       holiday@dream.fr </p>
+    </h1>
+  </header>
+
+  <section class="flex"> <!--2eme bloc "date et code"-->
+    <dl>
+      <dt>Code Client : </dt>
+      <dd>120</dd>
+      <dt>Date de facturation :</dt>
+      <dd>07.02.2017</dd>
+      <dt>Date d'écheance :</dt>
+      <dd>07.03.2017</dd>
+    </dl>
+  </section>
+
+  <section class="flex"> <!--3eme bloc "client"-->
+    <dl class="bloc">
+      <dt>Facturé à:</dt>
+      <dd>
+        M. Dupond Clément<br>
+        11 Boulevard Haussman<br>
+        75 000 Paris
+        <dl>
+      </dd>
+    </dl>
+    <dl class="bloc">
+      <dt>Date séjour :</dt>
+      <dd>Du 01/02/2017 au 07/02/2017</dd>
+      <dt>Mode de règlement :</dt>
+      <dd>Carte Visa</dd>
+    </dl>
+  </section>
+
+  <table> <!--tableau reacpitulatif du séjour-->
+    <thead> <!--en-tête du tableau-->
+      <tr> 
+        <th>Date</th>
+        <th>Référence</th>
+        <th>Description</th>
+        <th>Durée</th>
+        <th>Prix Unitaire</th>
+        <th>Prix TTC</th>
+      </tr>
+    </thead>
+
+    <tbody> <!--activités-->
+      <tr>
+        <td>03/02/2017</td>
+        <td>Chambre Simple 1</td>
+        <td> room service , petit-déjeuner</td>
+        <td>2 jours</td>
+        <td>200 €</td>
+        <td> 250 € </td>
+      </tr>
+    </tbody>
+
+    <tbody>
+      <tr>
+        <td>03/02/2017</td>
+        <td>Loisirs</td>
+        <td>Ping-Pong</td>
+        <td>2h</td>
+        <td>50 €/h</td>
+        <td> 100 € </td>
+      </tr>
+    </tbody> 
+
+    <tbody>
+      <tr>
+        <td>04/02/2017</td>
+        <td>Loisirs</td>
+        <td>SPA - soins de la peau</td>
+        <td> 1h30</td>
+        <td> 150 €/h</td>
+        <td> 200 € </td>
+      </tr>
+    </tbody>     
+  </table> <!--fin tableau-->
+
+  <footer>
+    <table id="result"> <!-- somme dû-->
+      <thead>
+        <tr>
+      <th>Promo :</th>
+      <td> - 150 €  </td>
+   </tr>
+   <tr>
+      <th>Prix TTC : </th>
+      <td>550 €  </td>
+   </tr>
+   <tr>
+      <th>Avoir :</th>
+      <td>150 €  </td>
+   </tr>
+   <tr>
+      <th>A régler :</th>
+      <td>250 €  </td>
+   </tr>
+
+    </table>
+        <br> <p> Merci de votre visite et à très bientôt, l'équipe Holiday Dream ! </p>
+      </thead>
+  <a href="reservation.php"> <input type="button" name="Retour" value="Retour"/></a> <!--bouton retour -->
+  <input type="button" name="Télécharger" value="Télécharger"/> <!--bouton "télécharger" -->
+  <a href="valide.html"> <input type="button" name="Valider" value="Valider"/></a> <!--bouton valider -->
+  </footer>
+
+</body>
+
+</html>

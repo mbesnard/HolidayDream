@@ -1,0 +1,165 @@
+#banniere1  { /*haut de page*/
+  display: block; /*definit un bloc*/
+  background-color: none; /*pas de couleur de fond*/
+  height: 35%; /*hauteur*/
+  width: 100%;  /*largeur*/
+  text-align: center; /* teste centré*/
+}
+
+p{ /*paragraphe*/
+  color: black; /*couleur du paragraphe*/
+  font-style: italic; /*style de la police*/
+}
+
+nav ul {
+    list-style-type: none; /* pas de point de liste */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    background-color: #fedb3c;   
+}
+nav li {
+    float: left;   
+}
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav li a:hover { /* illumination du bloc lorsque la souris est dessus */
+    background-color: #111;
+    text-decoration: none; /* pas de soulignement */
+    color: white;
+}
+#menu ul li ul { /*apparation des sous-listes sous les blocs du menus*/
+ display:none; /*type de boite par defaut*/
+ }
+#menu ul li:hover ul { /*faire disparaitre les sous-listes*/
+ display:block;
+ }
+#menu li:hover ul li { /*faire apparaitre les sous-listes quand la souris se met sur le bloc du menu*/
+ float:none; 
+}
+#menu li ul { /*ne pas décalle le menu quand les sous-menus apparaissent*/
+ position:absolute; /*élement positionné par "calcul"*/
+ }
+
+#contenu { 
+    display: block; 
+  background-color: none; 
+  height: 100%; 
+  width: 100%;   
+  color: black; 
+  text-align: center; 
+  text-decoration: none;
+}
+/* page avis*/
+.well-social-post {
+  border-radius: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding:0;
+}
+
+.well-social-post .glyphicon,
+.well-social-post .fa,
+.well-social-post [class^='icon-'],
+.well-social-post [class*='icon-'] {
+  font-weight: bold;
+  color: #999999;
+}
+
+.well-social-post a,
+.well-social-post a:hover,
+.well-social-post a:active,
+.well-social-post a:focus {
+  text-decoration: none;
+}
+
+.well-social-post .list-inline {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.well-social-post .list-inline li {
+  position: relative;
+}
+
+.well-social-post .list-inline li.active::after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  content: "";
+  top: 30px;
+  left: 50%;
+  left: -webkit-calc(50% - 5px);
+  left: -moz-calc(50%-5px);
+  left: calc(50% - 5px);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #dddddd;
+}
+
+.well-social-post .list-inline li.active a {
+  color: #222222;
+  font-weight: bold;
+}
+
+.well-social-post .form-control {
+  width: 100%;
+  min-height: 100px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.well-social-post .list-inline {
+  padding: 10px;
+}
+
+.well-social-post .list-inline li + li {
+  margin-left: 10px;
+}
+
+.well-social-post .post-actions {
+  margin: 0;
+  background-color: #f6f7f8;
+  border-top-color: #e9eaed;
+} 
+
+/*etoile*/                                                           
+.rating a {
+   float: right;
+   color: #aaa;
+   text-decoration: none;
+   font-size: 3em;
+}
+.rating a:hover,
+.rating a:focus,
+.rating a:hover ~ a,
+.rating a:focus ~ a {
+   color: orange;
+   cursor: pointer;
+}
+
+footer{ /*pied de page*/
+  background-color: #DCDCDC;
+}  
+div ul {
+    list-style-type: none;  
+    overflow: hidden;   
+}
+div li {
+    float: left;
+    padding-right: 20px;
+}
+
+#piedDePage a {
+    text-align: center;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+  }                                                                
